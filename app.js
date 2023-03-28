@@ -11,3 +11,11 @@
 //     console.log(data);
 //     emailRef.innerHTML = data.email
 //   });
+
+// 2. Async/Await
+async function main() {
+const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+console.log(response.json())
+}
+
+main()
